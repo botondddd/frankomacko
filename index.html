@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franko Macko - Hivatalos Oldal</title>
+    <link rel="icon" type="image/png" href="macko_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Franko Macko betöltés...</p>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="introAudio">
+        <source src="franko_macko_intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="hero-section">
+        <div class="overlay"></div>
+        
+        <div class="content">
+            <h1 class="welcome-text">Üdvözöllek a Frankó Mackó<br>Hivatalos Oldalán</h1>
+            
+            <div class="social-icons">
+                <a href="https://youtube.com/@frankomacko1" target="_blank" class="social-link youtube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/frankomacko.hu" target="_blank" class="social-link facebook" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/frankomackoofficial/" target="_blank" class="social-link instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@frankomackoofficial" target="_blank" class="social-link tiktok" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+
+            <div class="contact-section">
+                <p class="contact-label">Keress meg</p>
+                <a href="mailto:frankomacko@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i> frankomacko@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Franko Macko. Minden jog fenntartva.</p>
+    </footer>
+
+    <script>
+        // Loading screen kezelése
+        window.addEventListener('load', function() {
+            // Loading screen eltüntetése
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(() => {
+                loadingScreen.classList.add('fade-out');
+            }, 800);
+        });
+    </script>
+</body>
+</html>
